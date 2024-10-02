@@ -33,8 +33,11 @@ a {
     background-color: var(--color-de-fondo-menu);
 }
 
+
 .cabecera__logo {
     max-width: 80px; /* Ajuste para pantallas pequeñas */
+
+    
 }
 
 .cabecera__titulo {
@@ -48,9 +51,13 @@ a {
 
 .navegacion__elemento a {
     font-size: 0.9rem;
+    
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
-
+.presentacion{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
@@ -88,8 +95,8 @@ a {
     .navegacion__lista {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+        gap: 2rem;
+        margin-top: 0px;
     }
 
     .navegacion__elemento a {
