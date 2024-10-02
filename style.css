@@ -54,6 +54,30 @@ a {
     
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 10%;
+    
+    
+}
+
+.presentacion__foto{
+    width: auto;
+  
+}
+
+.presentacion__titulo{
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.presentacion__subtitulo{
+    font-size: 22px;
+   
+}
+
+
 
 
 
@@ -75,7 +99,7 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
         justify-content: space-between;
@@ -108,7 +132,7 @@ a {
 }
 
 /* Pantallas grandes */
-@media screen and  (min-width: 1024px) {
+@media (min-width: 1024px) {
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
         font-size: 1.8rem;
@@ -120,4 +144,21 @@ a {
     }
 
     
+}
+
+/* pantalla movil */
+@media (max-width: 700px){
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentacion__foto{
+        width: 50%;
+    }
 }
