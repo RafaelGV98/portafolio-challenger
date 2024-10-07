@@ -57,7 +57,8 @@ a {
 .presentacion {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 10%;
+    justify-content: space-around;
+    padding: 0 1rem;
     
     
 }
@@ -78,15 +79,77 @@ a {
    
 }
 
+.redes {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+   
+}
 
+.redes__img {
+    margin-right: 1rem; /* Espacio entre los elementos */
+}
+
+.redes__img:last-child {
+    margin-right: 1rem; 
+}
+
+.redes__img a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.redes__img img {
+    margin-left: 0.5rem; /* Espacio entre el texto y la flecha */
+}
 
 
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    padding: 0 1rem; /* Añade un poco de padding en los lados para dispositivos móviles */
+    background-color: #EAF2FD;
+}
 
-
+.sobre-mi__titulo {
+    margin-bottom: 0.5rem;
+}
 /*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades__titulo{
+    display: flex;
+    justify-content: center;
+}
 
+.habilidades__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}    
+
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Ancho fijo para todos los elementos */
+    height: 150px;
+    justify-content: center;
+    background-color: #FFFFFF;
+   
+}
+.habilidades__elemento img {
+    max-width: 50px; /* Ajusta según el tamaño deseado para los iconos */
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+}
+.habilidades__elemento p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem; /* Ajusta según tus preferencias */
+}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
 
@@ -150,10 +213,22 @@ a {
         font-size: 1.1rem;
         
     }
-
+    .presentacion{
+        padding: 0 10rem;
+    }
+    .sobre-mi {
+        padding: 0 30rem 0 10rem; /* Añade un poco de padding en los lados para dispositivos móviles */
+    }
+    .sobre-mi__titulo{
+        font-size: 32px;
+    }
+    .sobre-mi__texto{
+        font-size: 16px; 
+    }
     
-}
 
+
+}
 /* pantalla movil */
 @media (max-width: 700px){
     .cabecera{
@@ -180,3 +255,5 @@ a {
         
     }
 }
+
+
