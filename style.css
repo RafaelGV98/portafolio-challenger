@@ -29,7 +29,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 12%;
+    padding: 0 165px;
     background-color: var(--color-de-fondo-menu);
 }
 
@@ -41,8 +41,9 @@ a {
 }
 
 .cabecera__titulo {
+    padding-left: 0;
     font-size: 1.2rem;
-    text-align:center;
+   
 }
 
 .navegacion__lista {
@@ -110,7 +111,6 @@ a {
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi {
-    padding: 0 1rem; /* Añade un poco de padding en los lados para dispositivos móviles */
     background-color: #EAF2FD;
 }
 
@@ -127,7 +127,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1px;
 }    
 
 .habilidades__elemento{
@@ -152,7 +152,38 @@ a {
 }
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1px;
+}
 
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Ancho fijo para todos los elementos */
+    height: 150px;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.aficiones__titulo{
+    display: flex;
+    justify-content: center;
+}
+.aficiones__icono {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.aficiones__nombre {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9rem;
+}
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
@@ -199,6 +230,11 @@ a {
     
     
 
+    
+    
+    
+    
+
   
 }
 
@@ -217,13 +253,24 @@ a {
         padding: 0 10rem;
     }
     .sobre-mi {
-        padding: 0 30rem 0 10rem; /* Añade un poco de padding en los lados para dispositivos móviles */
+        padding: 0 30% 0 10%; /* Añade un poco de padding en los lados para dispositivos móviles */
     }
     .sobre-mi__titulo{
-        font-size: 32px;
+        font-size: 2rem;
     }
     .sobre-mi__texto{
-        font-size: 16px; 
+        font-size: 1rem; 
+    }
+    .habilidades{
+        padding: 0 7%;
+        margin-bottom: 1rem;
+    }
+    .habilidades__titulo{
+        font-size: 2rem;
+    }
+    .aficiones{
+        padding: 0 7%;
+        margin-bottom: 1rem;
     }
     
 
@@ -254,6 +301,8 @@ a {
         width: 60%;
         
     }
+   
+    
 }
 
 
