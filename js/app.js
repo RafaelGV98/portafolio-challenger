@@ -19,7 +19,8 @@ textareas.forEach((textarea) => {
 
 
 botonDescargaCv.addEventListener("click", () => {
-    window.open('./assets/cv/CV - Alejandro Turtola.pdf');
+  //poner aqui la hoja de vida en pdf la ubicacion despues del punto //
+    window.open('.');
 });
 
 
