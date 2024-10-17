@@ -20,7 +20,7 @@ textareas.forEach((textarea) => {
 
 botonDescargaCv.addEventListener("click", () => {
   //poner aqui la hoja de vida en pdf la ubicacion despues del punto //
-    window.open('./assets/cv/CV - rafael guerra.pdf');
+    window.open('assets/cv/CV - rafael guerra.pdf');
 });
 
 
